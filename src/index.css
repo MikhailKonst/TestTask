@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.buttonSwap {
+  width: 50px;
+  min-height: 50px;
+  background: url(./Img/swap.svg) no-repeat 50%;
+  background-size: 35px;
+  margin: 30px auto;
+  cursor: pointer;
+  border: #f7fafa;
+}
+
+.Comp1 {
+  font-family: "Courier New", Courier, monospace;
+  color: #000;
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.NameApp {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 600;
+  color: #0c0c0d;
+}
+.App {
+  background-color: #f7fafa;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #656464;
+  border-color: rgb(186, 186, 186);
+}
+
+.Comp6 {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid rgb(186, 186, 186);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.NameHistory {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ff0000;
+  transition: all 0.3s ease;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 25px;
+  color: #ff0000;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+  font-weight: 500;
+}
+
+.input-container2 {
+  position: relative;
+  margin: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input-field2 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+}
+
+.input-label2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input-highlight2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ff0000;
+  transition: all 0.3s ease;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input-field2:focus + .input-label2 {
+  top: -20px;
+  font-size: 25px;
+  color: #ff0000;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.input-field2:focus + .input-label2 + .input-highlight2 {
+  width: 100%;
+  font-weight: 500;
+}
+
+.ThemeButton {
+  margin-top: 36px;
+  padding: 1em 2em;
+  margin-left: 142px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000000;
+  transition: all 1000ms;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid rgb(186, 186, 186);
+}
+
+.ThemeButton:hover {
+  color: #0a0a0a;
+  transform: scale(1.1);
+  outline: 2px solid rgb(186, 186, 186);
+  box-shadow: 4px 5px 17px -4px rgb(186, 186, 186);
+}
+
+.ThemeButton:before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f3eeef;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.ThemeButton:hover:before {
+  width: 250%;
+}
+
+.NameButton {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.Select {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid rgb(186, 186, 186);
+  border-radius: 4px;
+  background-color: #f7fafa;
+  font-size: 12px;
+  appearance: auto;
+  cursor: pointer;
+  position: relative;
+}
+.Select2 {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 5px;
+  border: 1px solid rgb(186, 186, 186);
+  border-radius: 4px;
+  background-color: #f7fafa;
+  font-size: 12px;
+  appearance: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .Buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ThemeButton {
+    margin: 0 auto;
+  }
+}
