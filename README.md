@@ -1,6 +1,6 @@
 1.Склонируйте репозиторий: git clone https://github.com/MikhailKonst/TestTask.git
 
-2.Перейдите в папку проекта cd my-react
+2.Перейдите в папку проекта cd TestTask
 
 3.Установите зависимости: npm i
 
